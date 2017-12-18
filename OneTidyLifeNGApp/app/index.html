@@ -1,14 +1,40 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="OneTidyLifeNGApp">
   <head>
     <meta charset="utf-8">
     <title>My HTML File</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <script src="bower_components/angular/angular.js"></script>
   </head>
-  <body>
-
-    <p>Nothing here {{'yet' + '!'}}</p>
+  <body ng-controller="OneTidyLifeNGAppMainController">
+    <div class="jumbotron text-center">
+      <div style="display:inline">
+          <img src="images/Logo.png" style="width:42px;height:42px" style="float:left">
+          <h1 style="float:right">One Tidy Life</h1>
+      </div>
+      <p>Ici commence une changement radical a votre organisation journaliere!!</p> 
+    </div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">One Tidy Life</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Page 1-1</a></li>
+              <li><a href="#">Page 1-2</a></li>
+              <li><a href="#">Page 1-3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+    </nav>
 
   </body>
 </html>
